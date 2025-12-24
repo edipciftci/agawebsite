@@ -66,3 +66,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image: url("/app/assets/teamlogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(70vmin, 720px);
+
+  opacity: 0.6;
+}

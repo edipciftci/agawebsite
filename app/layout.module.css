@@ -1,0 +1,46 @@
+:root {
+    --top-space: 28px;
+    --nav-height: 64px;
+    --footer-height: 56px;
+}
+
+.scrollArea {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1; 
+}
+
+.page {
+    position: relative;
+    z-index: 1;
+    padding-top: calc(var(--top-space) + var(--nav-height) + 24px);
+    padding-bottom: calc(var(--footer-height) + 24px);
+}
+
+.topSpacer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--top-space);
+    background: white;
+    z-index: 50;
+}
+
+.navbarWrap {
+    position: fixed;
+    top: var(--top-space);
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.footerWrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
