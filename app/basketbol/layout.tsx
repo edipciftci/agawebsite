@@ -21,21 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <body>
-        <TeamLogo />
-        <div className={styles.topSpacer}/>
-        <div className={styles.navbarWrap}>
-          <NavBar />
-        </div>
+    <>
+      <TeamLogo />
+      <div className={styles.topSpacer}/>
+      <div className={styles.navbarWrap}>
+        <NavBar />
+      </div>
 
-        <main className={styles.page}>{children}</main>
+      <main className={styles.page}>{children}</main>
 
-        <footer className={styles.footerWrap}>
-          <Footer />
-        </footer>
+      <footer className={styles.footerWrap}>
+        <Footer />
+      </footer>
 
-      </body>
-    </html>
+    </>
   );
 }
