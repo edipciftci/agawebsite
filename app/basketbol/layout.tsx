@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import NavBar from "../NavBar"
-import Footer from "../Footer";
+import "../globals.css";
+import NavBar from "../components/BasketbolComponents/NavBar"
+import Footer from "../components/BasketbolComponents/Footer";
 import styles from "./layout.module.css";
-import TeamLogo from "../TeamLogo";
+import TeamLogo from "../components/BasketbolComponents/TeamLogo";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
