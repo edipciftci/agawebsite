@@ -3,14 +3,14 @@ import HeaderLogo from "../HeaderLogo";
 import styles from "./NavBar.module.css";
 
 const LINKS = [
-    { href: "/", label: "Ana Sayfa" },
-    { href: "/takimlar", label: "Takımlar" },
-    { href: "/fikstur", label: "Fikstür" },
-    { href: "/haberler", label: "Haberler" },
-    { href: "/galeri", label: "Galeri" },
-    { href: "/dökümanlar", label: "Dökümanlar" },
-    { href: "/kayit", label: "Kayıt" },
-    { href: "/iletisim", label: "İletişim" }
+    { href: "/basketbol/", label: "Ana Sayfa" },
+    { href: "/basketbol/takimlar", label: "Takımlar" },
+    { href: "/basketbol/fikstur", label: "Fikstür" },
+    { href: "/basketbol/haberler", label: "Haberler" },
+    { href: "/basketbol/galeri", label: "Galeri" },
+    { href: "/basketbol/dökümanlar", label: "Dökümanlar" },
+    { href: "/basketbol/kayit", label: "Kayıt" },
+    { href: "/basketbol/iletisim", label: "İletişim" }
 ];
 
 export default function NavBar(){
@@ -18,7 +18,7 @@ export default function NavBar(){
         <header className={styles.header}>
         
         <div className={styles.inner}>
-            <Link href="/" className={styles.brand}>
+            <Link href="/basketbol/" className={styles.brand}>
                 <HeaderLogo className={styles.logo} size={144}/>
             </Link>
 

@@ -9,7 +9,9 @@
     inset: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1; 
+    z-index: 1;
+    top: calc(var(--top-space) + var(--nav-height) + 24px);
+    bottom: var(--footer-height);
 }
 
 .page {
@@ -25,7 +27,6 @@
     left: 0;
     right: 0;
     height: var(--top-space);
-    background: white;
     z-index: 50;
 }
 
@@ -34,7 +35,7 @@
     top: var(--top-space);
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 60;
 }
 
 .footerWrap {
