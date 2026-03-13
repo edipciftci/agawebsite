@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import styles from "./layout.module.css";
-import TeamLogo from "./components/TeamLogo";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -11,8 +7,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Ankara Genç Akademi",
-  description: "Ankara Genç Akademi BSK Resmi Sayfası",
+  title: "AGAVA",
+  description: "Ankara Genç Akademi BSK ve Akarçeşme Voleybol Akademisi SK Resmi Sayfası",
 };
 
 export default function RootLayout({
@@ -23,18 +19,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body>
-        <TeamLogo />
-        <div className={styles.topSpacer}/>
-        <div className={styles.navbarWrap}>
-          <NavBar />
-        </div>
-
-        <main className={styles.page}>{children}</main>
-
-        <footer className={styles.footerWrap}>
-          <Footer />
-        </footer>
-
+        <main>{children}</main>
       </body>
     </html>
   );
